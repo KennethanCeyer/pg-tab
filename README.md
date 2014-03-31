@@ -3,7 +3,7 @@
 ### Start
 'PIGNOSE Tab' help to make to complecate tab structures easily
 
-This plugin version ```1.0```
+This plugin version ```1.1```
 
 ### Model
 + Normal Tab
