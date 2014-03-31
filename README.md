@@ -13,6 +13,6 @@ This plugin version ```1.0```
 + Response Tab
 
 ### Installation
-1. Download source form ```Github```
+1. Download sources form ```Github```
 2. Import ```jquery-1.11.0.js``` and ```jquery.PignoseTab.js```
 3. Insert inline js ```$(jQuery element).pignoseTab();```
