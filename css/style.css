@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* tab style */
+.pignose_tab_wrap { width: auto; height: auto; margin: 0; }
+.pignose_tab_wrap .pignose_tab_btn { display: block; width: 158px; height: 14px; padding: 10px 0; font: inherit; font-size: 12px; text-align: center; text-decoration: none; color: #888888; background-color: #f1f1f1; border: 1px solid #e6e6e6; border-bottom-width: 0; border-right-width: 0; }
+.pignose_tab_wrap .pignose_tab_btn:hover { background-color: #f4f4f4; }
+.pignose_tab_wrap .pignose_tab_btn.active { margin-bottom: -1px; padding-bottom: 11px; color: #333333; background-color: #ffffff; border-color: #d7d7d7; }
+.pignose_tab_wrap .pignose_tab_btn.last_btn { border-right-width: 1px; }
+.pignose_tab_wrap .pignose_tab_group { display: block; list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #bebebe; position: relative; *zoom: 1; }
+.pignose_tab_wrap .pignose_tab_group:after { display: block; content: ""; clear: both; }
+.pignose_tab_wrap .pignose_tab_group .pignose_tab_list { float: left; }
+.pignose_tab_wrap .pignose_tab_con { display: none; width: 100%; min-height: 150px; position: absolute; left: 0; top: 44px; }
+.pignose_tab_wrap .pignose_tab_con.active { display: block; }
+.pignose_tab_wrap .pignose_tab_more { display: none; position: absolute; top: 8px; right: 15px; text-decoration: none; color: #555555; }
+.pignose_tab_wrap .active .pignose_tab_more { display: block; }
+
+/* styled tab */
+.pignose_tab_red { border-color: #ffbbbb !important; }
+.pignose_tab_red .pignose_tab_btn { width: 88px; padding: 8px 0; font-size: 11px; background-color: #fff6f6; color: #ff5533; border-color: #ffdddd; }
+.pignose_tab_red .pignose_tab_btn:hover { background-color: #fffcfc; }
+.pignose_tab_red .pignose_tab_btn.active { padding-bottom: 9px; color: #cc1100; border-color: #ffbbbb; }
+.pignose_tab_red .pignose_tab_group { border-bottom-color: #ffaaaa; }
+.pignose_tab_red .pignose_tab_con { top: 40px; color: #cc1100; }
+
+/* response tab */
+.pignose_tab_response { width: 100% !important; }
+.pignose_tab_response .pignose_tab_btn { width: 100%; }
+.pignose_tab_response .pignose_tab_group { white-space: nowrap; }
+.pignose_tab_response .pignose_tab_list { width: 15%; }
+
+/* common style */
+body { margin: 0; padding: 0; font-size: 12px; font-family: 'Nanum Gothic', 'dotum', 'sans-serif'; color: #333333; }
+h3 { margin-top: 20px; text-align: center; }
+.main_tab { width: 600px; margin: 20px auto; border: 1px solid #e7e7e7; padding: 5px; }
+.main_tab table { width: 100%; table-layout: fixed; }
+.main_tab table .subject { text-align: left; padding-left: 5%; }
+.main_tab table .date { text-align: right; padding-right: 5%; }
