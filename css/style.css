@@ -24,7 +24,7 @@
 .pignose_tab_red .pignose_tab_con { top: 40px; color: #cc1100; }
 
 /* response tab */
-.pignose_tab_response { width: 100% !important; }
+.pignose_tab_response { width: 100% !important; box-sizing: border-box; -moz-box-sizing: border-box; }
 .pignose_tab_response .pignose_tab_btn { width: 100%; }
 .pignose_tab_response .pignose_tab_group { white-space: nowrap; }
 .pignose_tab_response .pignose_tab_list { width: 15%; }

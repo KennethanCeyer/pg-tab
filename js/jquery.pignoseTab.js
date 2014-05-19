@@ -1,6 +1,6 @@
 /*
  *
- *   PIG NOSE TAB 1.3
+ *   PIG NOSE TAB 1.4
  *   ================
  *
  *   @ date         2014-05-19
@@ -30,16 +30,18 @@
 					var margin = 0;
 					if($more.length)
 					{
-						margin = ($elem.width() - $more.outerWidth() + $more.offset().left);
+						margin = ($elem.width() - ($more.innerWidth(true) + $more.offset().left));
 					}
 
 					$btn.each(function() {
+						console.log($elem.innerWidth());
 						$(this).outerWidth(parseInt(($elem.width() - margin) / $btn.length));
-						$(this).parent().width($(this).width());
+						$(this).parent().width($(this).outerWidth(true));
 					});
 				});
 
 				$(window).trigger('resize');
+				$(window).bind('load', function() { $(this).trigger('resize'); });
 			}
 			
 			if($li.filter('.active').length < 1) $li.eq(0).addClass('active');
@@ -54,6 +56,7 @@
 					$li.removeClass('active').children('.pignose_tab_btn, .pignose_tab_con').removeClass('active');
 					$(this).parent().addClass('active').children('.pignose_tab_btn, .pignose_tab_con').addClass('active');
 					$elem.height($(this).next().position().top + $(this).next().outerHeight());
+					$(window).trigger('resize');
 				}
 				event.preventDefault();
 			});
