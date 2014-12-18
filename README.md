@@ -23,9 +23,9 @@ Pignose support many type tabs, please see the exhibition.
 ## Settings
 > Pignose support tab animation
 
-| Attribute       | Default      | Values                          | Description                                           |
-|:----------------|:-------------|:--------------------------------|:------------------------------------------------------|
-| callback        | null         | function                        | If tab button clicked, this function called always    |
-| animation       | static       | static, true, false             | Switch to use animation, `static` is same `false`     |
-| animationTime   | 300          | Millisecond time                | If you use animation, this can control animation time |
-| animationEasing |easeInOutCubic| Easing names                    | If you use animation, this can control animation motion easing, but it need easing plugin to be use, If you not, that use linear easing by default |
+| Attribute           | Default      | Values                    | Description                                           |
+|:--------------------|:-------------|:--------------------------|:------------------------------------------------------|
+| **callback**        | null         | function                  | If tab button clicked, this function called always    |
+| **animation**       | static       | static, true, false       | Switch to use animation, `static` is same `false`     |
+| **animationTime**   | 300          | Millisecond time          | If you use animation, this can control animation time |
+| **animationEasing** |easeInOutCubic| Easing names              | If you use animation, this can control animation motion easing, but it need easing plugin to be use, If you not, that use linear easing by default |
