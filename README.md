@@ -1,7 +1,7 @@
 PIGNOSE Tab
 ==
 * Version 2.0.0
-* Update Dev 10 2014
+* Update JUL 11 2014
 * [Show demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Tab/demo.html)
 
 > `Pignose Tab` would be helping to make to complecate tab structures easily with html
