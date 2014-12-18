@@ -1,21 +1,21 @@
-#####################################################################################################################
-# PIGNOSE Tab
+PIGNOSE Tab
+==
+* Version 2.0.0
+* Update Dev 10 2014
+* [Show demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Tab/demo.html)
 
-## Description
-`Pignose Tab` would be helping to make to complecate tab structures easily with html
-This plugin's lastest version is `2.0`
-
+> `Pignose Tab` would be helping to make to complecate tab structures easily with html
 
 Pignose support many type tabs, please see the exhibition.
-+ Normal Tab
-+ Sub Tab
-+ Four depth Tab (added version 2.0)
-+ Article Tab
-+ Styled Tab
-+ Response Tab
-+ Mobile Tab (added version 1.4)
+1. Normal Tab
+2. Sub Tab
+3. Four depth Tab (added version 2.0)
+4. Article Tab
+5. Styled Tab
+6. Response Tab
+7. Mobile Tab (added version 1.4)
 
-## Installation
+#### Getting Start
 1. Download <b>Pignose Tab</b> plugin
 2. Import <b>jquery-1.11.0.js</b> and <b>jquery.PignoseTab.js</b> on your html documents
 3. Insert js inline ```$(jQuery Selector).pignoseTab();```

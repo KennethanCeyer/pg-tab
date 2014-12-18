@@ -1,14 +1,13 @@
-/*
- *
- *   PIG NOSE TAB 2.0
- *   ================
- *
- *   @ date         2014-07-11
- *   @ author       sungmin. han (http://kennethan.dothome.co.kr)
- *   @ copyright    pig-nose
- *   @ license      'MIT license' - (http://rem.mit-license.org)
- *
- */
+/****************************************
+*
+*  - PIG NOSE TAB
+*  - DATE    2014-07-11
+*  - UPDATE  2014-12-18
+*  - AUTHOR  PIGNOSE (http://kennethan.dothome.co.kr)
+*  - VERSION 2.0.0
+*  - LICENCE MIT
+*
+****************************************/
 
 (function($) {
 	$.fn.pignoseTab = function(options) {
