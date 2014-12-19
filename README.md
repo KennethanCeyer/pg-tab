@@ -5,9 +5,9 @@ PIGNOSE Tab
 * [Show demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Tab/demo.html)
 
 > **PIGNOSE Tab IS** <br />
-> This plugin support accessibility perfectly. <br />
-> And also support animation. <br />
-> You can choose color theme easily for this plugin.
+> This plugin support ```accessibility``` perfectly. <br />
+> And also support ```animation```. <br />
+> You can choose ```color theme``` easily for this plugin.
 
 Getting start
 ----
@@ -37,8 +37,7 @@ Getting start
 
 Settings
 ----
-> Pignose support tab animation
-
+####options
 | Attribute           | Default      | Values                    | Description                                           |
 |:--------------------|:-------------|:--------------------------|:------------------------------------------------------|
 | callback        | null         | function                  | If tab button clicked, this function will called.    |
