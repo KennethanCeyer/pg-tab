@@ -6,8 +6,8 @@ PIGNOSE Tab
 
 > **PIGNOSE Tab IS** <br />
 > This plugin support ```accessibility``` perfectly. <br />
-> And also support ```animation```. <br />
-> You can choose ```color theme``` easily for this plugin.
+> And also support animation. <br />
+> You can choose color theme easily for this plugin.
 
 Getting start
 ----
