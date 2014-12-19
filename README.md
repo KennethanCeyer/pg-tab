@@ -1,7 +1,7 @@
 PIGNOSE Tab
 ==
 * Version 2.0.0
-* Update JUL 11 2014
+* Update Jul 11 2014
 * [Show demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Tab/demo.html)
 
 > **PIGNOSE Tab IS** <br />
