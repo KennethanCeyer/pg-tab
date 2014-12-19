@@ -4,7 +4,13 @@ PIGNOSE Tab
 * Update JUL 11 2014
 * [Show demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Tab/demo.html)
 
-> `Pignose Tab` would be helping to make to complecate tab structures easily with html
+> **PIGNOSE Tab IS** <br />
+> This plugin support accessibility perfectly. <br />
+> And also support animation. <br />
+> You can choose color theme easily for this plugin.
+
+Getting start
+----
 
 #### Overview
 1. Normal Tab
@@ -15,7 +21,7 @@ PIGNOSE Tab
 6. Response Tab
 7. Mobile Tab (added version 1.4)
 
-#### Getting Start
+#### Installation
 1. Download ```Pignose Tab``` plugin
 2. Import ```jquery-1.11.0.js``` and ```jquery.PignoseTab.js``` on your html documents <br />
 
@@ -29,7 +35,8 @@ PIGNOSE Tab
  $(jQuery Selector).pignoseTab();
  ```
 
-## Settings
+Settings
+----
 > Pignose support tab animation
 
 | Attribute           | Default      | Values                    | Description                                           |
