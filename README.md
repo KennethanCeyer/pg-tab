@@ -17,13 +17,14 @@ PIGNOSE Tab
 
 #### Getting Start
 1. Download ```Pignose Tab``` plugin
-2. Import ```jquery-1.11.0.js``` and ```jquery.PignoseTab.js``` on your html documents
+2. Import ```jquery-1.11.0.js``` and ```jquery.PignoseTab.js``` on your html documents <br />
+
 ```html
 <script type="text/javascript" src="assets/js/jquery-1.11.0.js"></script>
 <script type="text/javascript" src="assets/js/jquery.pignoseTab.min.js"></script>
 ```
+3. Insert jQuery code line. <br />
 
-3. Insert jQuery code line.
  ```javascript
  $(jQuery Selector).pignoseTab();
  ```
