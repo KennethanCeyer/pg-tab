@@ -2,12 +2,12 @@ PIGNOSE Tab
 ==
 * Version 2.0.0
 * Update Jul 11 2014
-* [Show demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Tab/demo.html)
+* [See demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Tab/demo.html)
 
 > **PIGNOSE Tab IS** <br />
 > This plugin support ```accessibility``` perfectly. <br />
 > And also support animation. <br />
-> You can choose color theme easily for this plugin.
+> You can choose color theme easily for those plugin.
 
 Getting start
 ----
@@ -22,14 +22,14 @@ Getting start
 7. Mobile Tab (added version 1.4)
 
 #### Installation
-1. Download ```Pignose Tab``` plugin
+1. Download the ```Pignose Tab``` plugin
 2. Import ```jquery-1.11.0.js``` and ```jquery.PignoseTab.js``` on your html documents <br />
 
  ```html
 <script type="text/javascript" src="assets/js/jquery-1.11.0.js"></script>
 <script type="text/javascript" src="assets/js/jquery.pignoseTab.min.js"></script>
  ```
-3. Insert jQuery code line. <br />
+3. Insert jQuery code lines. <br />
 
  ```javascript
  $(jQuery Selector).pignoseTab();
