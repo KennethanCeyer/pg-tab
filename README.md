@@ -2,7 +2,9 @@ PIGNOSE Tab
 ==
 * Version 2.0.0
 * Update Jul 11 2014
-* [See demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Tab/demo.html)
+* [See demo](http://www.pigno.se/barn/PIGNOSE-Tab/demo.html)
+ 
+![PIGNOSE Tab Sample](http://www.pigno.se/barn/PIGNOSE-Tab/assets/image/sample.jpg)
 
 > **PIGNOSE Tab IS** <br />
 > This plugin support ```accessibility``` perfectly. <br />
