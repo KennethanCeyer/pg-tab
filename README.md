@@ -44,4 +44,3 @@ Settings
 | animation       | static       | static, true, false       | Switch for animation, ```static``` has same mean of ```false```     |
 | animationTime   | 300          | Millisecond time          | This attribute support animation time ```(ms)``` |
 | animationEasing |easeInOutCubic| Easing names              | You can use jQuery animation easing. |
-
