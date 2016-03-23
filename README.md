@@ -54,6 +54,6 @@ Settings
 Question
 ----
 
-If you have a question or you are in truble in the problems of this plugin.
+If you have a question or you are in trouble of this plugin.
 
 Please report to us, we can fix that quickly!
