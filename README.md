@@ -23,11 +23,11 @@ Getting started
 
 #### Installation
 1. Download or clone this repository.
-2. Import ```jquery-1.11.0.js``` and ```pignose.tab.js``` on your html documents.
+2. Import ```jquery-1.11.0.js``` and ```pignose.tab.min.js``` on your html documents.
 
  ```html
-<script type="text/javascript" src="assets/js/jquery-1.11.0.js"></script>
-<script type="text/javascript" src="assets/js/pignose.tab.js"></script>
+<script type="text/javascript" src="demo/js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="dist/js/pignose.tab.min.js"></script>
  ```
 3. Insert jQuery code lines. <br />
 
