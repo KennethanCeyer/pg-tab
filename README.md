@@ -1,8 +1,6 @@
 PIGNOSE Tab
 ==
 
-* Version 2.0.0
-* Last update Mar 24 2016
 * [Check demo page](http://www.pigno.se/barn/PIGNOSE-Tab/)
  
 ![PIGNOSE Tab Sample](http://www.pigno.se/barn/PIGNOSE-Tab/assets/image/sample.jpg)
@@ -44,5 +42,6 @@ Settings
 |:--------------------|:-------------|:--------------------------|:------------------------------------------------------|
 | callback        | null         | function                  | If tab button is clicked, this callback will called.    |
 | animation       | static       | static, true, false       | You can trun on/off animation to set this property, false mean `static`. |
+| children        | string       | .sub-tab                  |	If you use sub tab, you need to choose children's class name. |
 | animationTime   | 300          | Millisecond time          | This option can set animation time. ```(ms)``` |
 | animationEasing |easeInOutCubic| Easing names              | You can use jQuery animation easing. |
