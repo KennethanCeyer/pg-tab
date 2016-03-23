@@ -1,0 +1,1408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>PIGNOSE Tab</title>
+	<link rel="stylesheet" href="demo/css/bootstrap.min.css">
+	<link rel="stylesheet" href="demo/css/prism.css" />
+	<link rel="stylesheet" href="dist/css/pignose.tab.min.css" />
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Raleway);
+		html, body {
+			position: relative;
+			height: 100%;
+		}
+
+		#wrapper {
+			padding-bottom: 40px;
+		}
+
+		.header {
+			max-width: 1200px;
+			width: 80%;
+			margin: 0 auto;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+
+		.header h1 {
+			margin-bottom: 20px;
+			font-size: 24px;
+			font-weight: 400;
+			font-family: 'Raleway', 'helvetica', 'sans-serif';
+			color: #333333;
+		}
+
+		.article {
+			max-width: 1200px;
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 40px;
+			padding-top: 40px;
+			border-top: 1px solid #efefef;
+			font-family: 'Raleway', 'helvetica', 'sans-serif';
+			text-align: center;
+		}
+
+		.article h3 {
+			margin-bottom: 40px;
+		}
+
+		.article table {
+			font-size: 115%;
+			text-align: left;
+		}
+
+		.article pre {
+			font-size: 115%;
+		}
+
+		.tab { width: 100%; max-width: 600px; margin: 20px auto; border: 1px solid #e7e7e7; padding: 5px; }
+		.nav.tab { width: auto; max-width: 100%; margin: 0; border: 0; padding: 0; border-bottom: 1px solid #ddd; }
+		.pignose-sub-tab { border: 0; margin: 0; padding: 0;
+		.table { width: 100%; table-layout: fixed; }
+		.table .subject { text-align: left; padding-left: 5%; }
+		.table .date { text-align: right; padding-right: 5%; }
+	</style>
+	<script type="text/javascript" src="demo/js/jquery.latest.min.js"></script>
+	<script type="text/javascript" src="demo/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="demo/js/prism.min.js"></script>
+	<script type="text/javascript" src="dist/js/pignose.tab.min.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	$(function() {
+		$('.tab').pignoseTab({
+			animation: true,
+			children: '.tab'
+		});
+	});
+	//]]>
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="header">
+			<img src="demo/img/pignose-logo.jpg" alt="" />
+			<h1>PIGNOSE Tab</h1>
+			<a href="https://github.com/KennethanCeyer/PIGNOSE-Tab" target="_blank" class="btn btn-primary">View project on the Github</a>
+		</div>
+		<div class="article">
+			<h3>Normal Tab</h3>
+			<div class="tab">
+				<ul>
+					<li>
+						<a href="#">TAB-1</a>
+						<div>
+							Hello i am normal tab!<br />
+							This usage so easy and simple.
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-2</a>
+						<div>
+							Content2
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-3</a>
+						<div>
+							Content3
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content" class="article">
+			<h3>options</h3>
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>value</th>
+						<th>default</th>
+						<th>description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>callback</td>
+						<td><div class="label label-primary">function</div></td>
+						<td>null</td>
+						<td>If tab button is clicked, this callback will called.</td>
+					</tr>
+					<tr>
+						<td>animation</td>
+						<td><div class="label label-primary">string</div></td>
+						<td>static</td>
+						<td>You can trun on/off animation to set this property, false mean static.</td>
+					</tr>
+					<tr>
+						<td>children</td>
+						<td><div class="label label-primary">string</div></td>
+						<td>.sub-tab</td>
+						<td>If you use sub tab, you need to choose children's class name.</td>
+					</tr>
+					<tr>
+						<td>animationTime</td>
+						<td><div class="label label-primary">number</div></td>
+						<td>300</td>
+						<td>This option can set animation time. (ms)</td>
+					</tr>
+					<tr>
+						<td>animationEasing</td>
+						<td><div class="label label-primary">function</div></td>
+						<td>easeInOutCubic</td>
+						<td>You can use jQuery animation easing.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="article">
+			<h3>Sub Tab</h3>
+			<div class="tab">
+				<ul>
+					<li>
+						<a href="#">TAB-1</a>
+						<div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="#">SUBTAB 1-1</a>
+										<div>
+											Content 1-1
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 1-2</a>
+										<div>
+											Content 1-2
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 1-3</a>
+										<div>
+											Content 1-3
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-2</a>
+						<div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="#">SUBTAB 2-1</a>
+										<div>
+											Content 2-1
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 2-2</a>
+										<div>
+											Content 2-2
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 2-3</a>
+										<div>
+											Content 2-3
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-3</a>
+						<div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="#">SUBTAB 3-1</a>
+										<div>
+											Content 3-1
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 3-2</a>
+										<div>
+											Content 3-2
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 3-3</a>
+										<div>
+											Content 3-3
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="article">
+			<h3>Four depth Tab</h3>
+			<div class="tab">
+				<ul>
+					<li>
+						<a href="#">TAB-1</a>
+						<div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="#">SUBTAB 1-1</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 1-1-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-1-1-1</a>
+																		<div>
+																			Content 1-1-1-1<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text<br />
+																			Long Text
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-1-1-2</a>
+																		<div>
+																			Content 1-1-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-1-1-3</a>
+																		<div>
+																			Content 1-1-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 1-1-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-1-2-1</a>
+																		<div>
+																			Content 1-1-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-1-2-2</a>
+																		<div>
+																			Content 1-1-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-1-2-3</a>
+																		<div>
+																			Content 1-1-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 1-1-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-1-3-1</a>
+																		<div>
+																			Content 1-1-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-1-3-2</a>
+																		<div>
+																			Content 1-1-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-1-3-3</a>
+																		<div>
+																			Content 1-1-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 1-2</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 1-2-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-2-1-1</a>
+																		<div>
+																			Content 1-2-1-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-2-1-2</a>
+																		<div>
+																			Content 1-2-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-2-1-3</a>
+																		<div>
+																			Content 1-2-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 1-2-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-2-2-1</a>
+																		<div>
+																			Content 1-2-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-2-2-2</a>
+																		<div>
+																			Content 1-2-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-2-2-3</a>
+																		<div>
+																			Content 1-2-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 1-2-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-2-3-1</a>
+																		<div>
+																			Content 1-2-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-2-3-2</a>
+																		<div>
+																			Content 1-2-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-2-3-3</a>
+																		<div>
+																			Content 1-2-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 1-3</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 1-3-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-3-1-1</a>
+																		<div>
+																			Content 1-3-1-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-3-1-2</a>
+																		<div>
+																			Content 1-3-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-3-1-3</a>
+																		<div>
+																			Content 1-3-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 1-3-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-3-2-1</a>
+																		<div>
+																			Content 1-3-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-3-2-2</a>
+																		<div>
+																			Content 1-3-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-3-2-3</a>
+																		<div>
+																			Content 1-3-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 1-3-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 1-3-3-1</a>
+																		<div>
+																			Content 1-3-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-3-3-2</a>
+																		<div>
+																			Content 1-3-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 1-3-3-3</a>
+																		<div>
+																			Content 1-3-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-2</a>
+						<div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="#">SUBTAB 2-1</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 2-1-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-1-1-1</a>
+																		<div>
+																			Content 2-1-1-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-1-1-2</a>
+																		<div>
+																			Content 2-1-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-1-1-3</a>
+																		<div>
+																			Content 2-1-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 2-1-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-1-2-1</a>
+																		<div>
+																			Content 2-1-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-1-2-2</a>
+																		<div>
+																			Content 2-1-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-1-2-3</a>
+																		<div>
+																			Content 2-1-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 2-1-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-1-3-1</a>
+																		<div>
+																			Content 2-1-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-1-3-2</a>
+																		<div>
+																			Content 2-1-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-1-3-3</a>
+																		<div>
+																			Content 2-1-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 2-2</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 2-2-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-2-1-1</a>
+																		<div>
+																			Content 2-2-1-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-2-1-2</a>
+																		<div>
+																			Content 2-2-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-2-1-3</a>
+																		<div>
+																			Content 2-2-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 2-2-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-2-2-1</a>
+																		<div>
+																			Content 2-2-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-2-2-2</a>
+																		<div>
+																			Content 2-2-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-2-2-3</a>
+																		<div>
+																			Content 2-2-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 2-2-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-2-3-1</a>
+																		<div>
+																			Content 2-2-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-2-3-2</a>
+																		<div>
+																			Content 2-2-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-2-3-3</a>
+																		<div>
+																			Content 2-2-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 2-3</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 2-3-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-3-1-1</a>
+																		<div>
+																			Content 2-3-1-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-3-1-2</a>
+																		<div>
+																			Content 2-3-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-3-1-3</a>
+																		<div>
+																			Content 2-3-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 2-3-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-3-2-1</a>
+																		<div>
+																			Content 2-3-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-3-2-2</a>
+																		<div>
+																			Content 2-3-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-3-2-3</a>
+																		<div>
+																			Content 2-3-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 2-3-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 2-3-3-1</a>
+																		<div>
+																			Content 2-3-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-3-3-2</a>
+																		<div>
+																			Content 2-3-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 2-3-3-3</a>
+																		<div>
+																			Content 2-3-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-3</a>
+						<div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="#">SUBTAB 3-1</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 3-1-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-1-1-1</a>
+																		<div>
+																			Content 3-1-1-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-1-1-2</a>
+																		<div>
+																			Content 3-1-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-1-1-3</a>
+																		<div>
+																			Content 3-1-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 3-1-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-1-2-1</a>
+																		<div>
+																			Content 3-1-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-1-2-2</a>
+																		<div>
+																			Content 3-1-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-1-2-3</a>
+																		<div>
+																			Content 3-1-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 3-1-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-1-3-1</a>
+																		<div>
+																			Content 3-1-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-1-3-2</a>
+																		<div>
+																			Content 3-1-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-1-3-3</a>
+																		<div>
+																			Content 3-1-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 3-2</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 3-2-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-2-1-1</a>
+																		<div>
+																			Content 3-2-1-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-2-1-2</a>
+																		<div>
+																			Content 3-2-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-2-1-3</a>
+																		<div>
+																			Content 3-2-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 3-2-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-2-2-1</a>
+																		<div>
+																			Content 3-2-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-2-2-2</a>
+																		<div>
+																			Content 3-2-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-2-2-3</a>
+																		<div>
+																			Content 3-2-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 3-2-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-2-3-1</a>
+																		<div>
+																			Content 3-2-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-2-3-2</a>
+																		<div>
+																			Content 3-2-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-2-3-3</a>
+																		<div>
+																			Content 3-2-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">SUBTAB 3-3</a>
+										<div>
+											<div class="tab">
+												<ul>
+													<li>
+														<a href="#">SUBTAB 3-3-1</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-3-1-1</a>
+																		<div>
+																			Content 3-3-1-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-3-1-2</a>
+																		<div>
+																			Content 3-3-1-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-3-1-3</a>
+																		<div>
+																			Content 3-3-1-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 3-3-2</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-3-2-1</a>
+																		<div>
+																			Content 3-3-2-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-3-2-2</a>
+																		<div>
+																			Content 3-3-2-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-3-2-3</a>
+																		<div>
+																			Content 3-3-2-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">SUBTAB 3-3-3</a>
+														<div>
+															<div class="tab">
+																<ul>
+																	<li>
+																		<a href="#">SUBTAB 3-3-3-1</a>
+																		<div>
+																			Content 3-3-3-1
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-3-3-2</a>
+																		<div>
+																			Content 3-3-3-2
+																		</div>
+																	</li>
+																	<li>
+																		<a href="#">SUBTAB 3-3-3-3</a>
+																		<div>
+																			Content 3-3-3-3
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="article">
+			<h3>Article Tab</h3>
+			<div class="tab">
+				<ul>
+					<li>
+						<a href="#">TAB-1</a>
+						<div>
+							<table>
+								<colgroup>
+									<col style="width: 75%" />
+									<col style="width: 25%" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<a href="#" class="pignose-tab-more">More article1</a>
+					</li>
+					<li>
+						<a href="#">TAB-2</a>
+						<div>
+							<table>
+								<colgroup>
+									<col style="width: 75%" />
+									<col style="width: 25%" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<a href="#" class="pignose-tab-more">More article2</a>
+					</li>
+					<li>
+						<a href="#">TAB-3</a>
+						<div>
+							<table>
+								<colgroup>
+									<col style="width: 75%" />
+									<col style="width: 25%" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+									<tr>
+										<td class="subject">Article title</td>
+										<td class="date">2014-03-31</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<a href="#" class="pignose-tab-more">More article3</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="article">
+			<h3>Styled Tab</h3>
+			<div class="tab pignose-tab-mint tab">
+				<ul>
+					<li>
+						<a href="#">TAB-1</a>
+						<div>
+							I have pretty good design, just customize css codes!
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-2</a>
+						<div>
+							I have pretty good design, just customize css codes!
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-3</a>
+						<div>
+							I have pretty good design, just customize css codes!
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="article">
+			<h3>Response tab</h3>
+			<div class="tab pignose-tab-response tab">
+				<ul>
+					<li>
+						<a href="#">TAB-1</a>
+						<div>
+							width 100%
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-2</a>
+						<div>
+							width 100%
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-3</a>
+						<div>
+							width 100%
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-4</a>
+						<div>
+							width 100%
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-5</a>
+						<div>
+							width 100%
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-6</a>
+						<div>
+							width 100%
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="article">
+			<h3>Mobile tab</h3>
+			<div class="tab pignose-tab-response pignose-tab-responsive-btn tab">
+				<ul>
+					<li>
+						<a href="#">TAB-1</a>
+						<div>
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1<br />
+							Long Content1
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-2</a>
+						<div>
+							Content2
+						</div>
+					</li>
+					<li>
+						<a href="#">TAB-3</a>
+						<div>
+							Content3
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="bower" class="article">
+			<h3>bower</h3>
+			<blockquote><p>If you use bower.</p></blockquote>
+			<pre><code class="language-bash">bower install pg-tab</code></pre>
+		</div>
+		<div id="npm" class="article">
+			<h3>npm</h3>
+			<blockquote><p>If you use npm.</p></blockquote>
+			<pre><code class="language-bash">npm install pg-tab</code></pre>
+		</div>
+		<div id="sample" class="article">
+			<h3>sample</h3>
+			<ul class="nav nav-tabs tab">
+				<li role="presentation" class="active"><a href="#html" data-toggle="tab" aria-controls="html">HTML</a></li>
+				<li role="presentation"><a href="#javascript" data-toggle="tab" aria-controls="javascript">Javascript</a></li>
+				<li role="presentation"><a href="#css" data-toggle="tab" aria-controls="css">CSS</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="html">
+					<pre><code class="language-markup">&lt;div class=&quot;tab&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;TAB-1&lt;/a&gt;
+			&lt;div&gt;
+				Hello i am normal tab!&lt;br /&gt;
+				This usage so easy and simple.
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;TAB-2&lt;/a&gt;
+			&lt;div&gt;
+				Content2
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;TAB-3&lt;/a&gt;
+			&lt;div&gt;
+				Content3
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="javascript">
+					<pre><code class="language-js">$(function() {
+	$('.tab').pignoseTab({
+		animation: true,
+		children: '.tab'
+	});
+});</code></pre>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="css">
+					<pre><code class="language-css">.tab {
+	width: 100%;
+	max-width: 600px;
+	margin: 20px auto;
+	border: 1px solid #e7e7e7;
+	padding: 5px;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

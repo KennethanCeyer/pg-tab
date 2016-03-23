@@ -1,0 +1,33 @@
+{
+  "name": "pg-tab",
+  "version": "3.0.1",
+  "description": "jQuery tab plugin supported accessibility.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KennethanCeyer/PIGNOSE-Tab.git"
+  },
+  "keywords": [
+    "PIGNOSE",
+    "tab",
+    "accessibility",
+    "flat",
+    "design",
+    "material",
+    "jquery",
+    "tabmenu",
+    "multi",
+    "depth",
+    "tab",
+    "subtab"
+  ],
+  "author": "Kenneth Ceyer <kennethan@nhpcw.com> (http://www.pigno.se)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KennethanCeyer/PIGNOSE-Tab/issues"
+  },
+  "homepage": "https://github.com/KennethanCeyer/PIGNOSE-Tab#readme"
+}
