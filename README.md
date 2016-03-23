@@ -50,3 +50,10 @@ Settings
 | children        | string       | .sub-tab                  |	If you use sub tab, you need to choose children's class name. |
 | animationTime   | 300          | Millisecond time          | This option can set animation time. ```(ms)``` |
 | animationEasing |easeInOutCubic| Easing names              | You can use jQuery animation easing. |
+
+Question
+----
+
+If you have a question or you are in truble in the problems of this plugin.
+
+Please report to us, we can fix that quickly!
