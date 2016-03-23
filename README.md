@@ -40,7 +40,7 @@ Getting started
 Settings
 ----
 ####options
-| Attribute           | Default      | Values                    | Description                                           |
+| Option           | Default      | Values                    | Description                                           |
 |:--------------------|:-------------|:--------------------------|:------------------------------------------------------|
 | callback        | null         | function                  | If tab button is clicked, this callback will called.    |
 | animation       | static       | static, true, false       | You can trun on/off animation to set this property, false mean `static`. |
