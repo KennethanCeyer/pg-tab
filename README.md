@@ -1,17 +1,17 @@
 PIGNOSE Tab
 ==
+
 * Version 2.0.0
-* Update Jul 11 2014
-* [See demo](http://www.pigno.se/barn/PIGNOSE-Tab/demo.html)
+* Last update Mar 24 2016
+* [Check demo page](http://www.pigno.se/barn/PIGNOSE-Tab/)
  
 ![PIGNOSE Tab Sample](http://www.pigno.se/barn/PIGNOSE-Tab/assets/image/sample.jpg)
 
-> **PIGNOSE Tab IS** <br />
-> This plugin support ```accessibility``` perfectly. <br />
-> And also support animation. <br />
-> You can choose color theme easily for those plugin.
+- This plugin supports the ```web accessibility``` perfectly
+- And also supports animation. <br />
+- You can choose the color of theme very easily.
 
-Getting start
+Getting started
 ----
 
 #### Overview
@@ -24,12 +24,12 @@ Getting start
 7. Mobile Tab (added version 1.4)
 
 #### Installation
-1. Download the ```Pignose Tab``` plugin
-2. Import ```jquery-1.11.0.js``` and ```jquery.PignoseTab.js``` on your html documents <br />
+1. Download or clone this repository.
+2. Import ```jquery-1.11.0.js``` and ```pignose.tab.js``` on your html documents.
 
  ```html
 <script type="text/javascript" src="assets/js/jquery-1.11.0.js"></script>
-<script type="text/javascript" src="assets/js/jquery.pignoseTab.min.js"></script>
+<script type="text/javascript" src="assets/js/pignose.tab.js"></script>
  ```
 3. Insert jQuery code lines. <br />
 
@@ -42,7 +42,7 @@ Settings
 ####options
 | Attribute           | Default      | Values                    | Description                                           |
 |:--------------------|:-------------|:--------------------------|:------------------------------------------------------|
-| callback        | null         | function                  | If tab button clicked, this function will called.    |
-| animation       | static       | static, true, false       | Switch for animation, ```static``` has same mean of ```false```     |
-| animationTime   | 300          | Millisecond time          | This attribute support animation time ```(ms)``` |
+| callback        | null         | function                  | If tab button is clicked, this callback will called.    |
+| animation       | static       | static, true, false       | You can trun on/off animation to set this property, false mean `static`. |
+| animationTime   | 300          | Millisecond time          | This option can set animation time. ```(ms)``` |
 | animationEasing |easeInOutCubic| Easing names              | You can use jQuery animation easing. |
