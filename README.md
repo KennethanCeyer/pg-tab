@@ -17,7 +17,8 @@ PIGNOSE Tab
 Getting started
 ----
 
-#### Overview
+### Overview
+
 1. Normal Tab
 2. Sub Tab
 3. Four depth Tab (added version 2.0)
@@ -26,7 +27,8 @@ Getting started
 6. Response Tab
 7. Mobile Tab (added version 1.4)
 
-#### Installation
+### Installation
+
 1. Download or clone this repository.
 2. Import ```jquery-1.11.0.js``` and ```pignose.tab.min.js``` on your html documents.
 
@@ -40,9 +42,8 @@ Getting started
  $(jQuery Selector).pignoseTab();
  ```
 
-Settings
-----
-####options
+### Options
+
 | Option           | Default      | Values                    | Description                                           |
 |:--------------------|:-------------|:--------------------------|:------------------------------------------------------|
 | callback        | null         | function                  | If tab button is clicked, this callback will called.    |
@@ -51,9 +52,10 @@ Settings
 | animationTime   | 300          | Millisecond time          | This option can set animation time. ```(ms)``` |
 | animationEasing |easeInOutCubic| Easing names              | You can use jQuery animation easing. |
 
-Question
 ----
 
-If you have a question or you are in trouble of this plugin.
+### Question
 
-Please report to us, we can fix that quickly!
+If you found something problem of this plugin, or you have some question.
+
+Please send me a message to use either [gitter](https://gitter.im/KennethanCeyer/PIGNOSE) or [Github issue](https://github.com/KennethanCeyer/PIGNOSE-Tab/issues). (gitter url is on the top of the manual)
