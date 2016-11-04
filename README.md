@@ -6,15 +6,15 @@ PIGNOSE Tab
 
 ----
 
-* [Check demo page](http://www.pigno.se/barn/PIGNOSE-Tab/)
+- [See demo](http://www.pigno.se/barn/PIGNOSE-Tab/)
  
 Web accessibility be supported a responsible tab plugin.
  
-![PIGNOSE Tab Sample](http://www.nhpcw.com/upload/%25EB%258B%25A4%25EC%259A%25B4%25EB%25A1%259C%25EB%2593%259C%2B%25287%2529_032416020737.png)
+![Screenshot Main](http://www.pigno.se/barn/PIGNOSE-Tab/demo/img/screenshot_main.png)
 
 - This plugin supports the ```web accessibility``` perfectly
-- And also supports animation. <br />
-- You can choose the color of theme very easily.
+- And also supports CSS animation.
+- You can choice themes very easily.
 
 ## Getting started
 
@@ -22,25 +22,26 @@ Web accessibility be supported a responsible tab plugin.
 
 1. Normal Tab
 2. Sub Tab
-3. Four depth Tab (added version 2.0)
+3. Multiple depth Tab
 4. Article Tab
 5. Styled Tab
 6. Response Tab
-7. Mobile Tab (added version 1.4)
+7. Mobile Tab
 
 ### Installation
 
-1. Download or clone this repository.
-2. Import ```jquery-1.11.0.js``` and ```pignose.tab.min.js``` on your html documents.
+1. Download or Clone this repository.
+2. Import `jquery.js 1.11.x higher`, `dist/pignose.tab.min.js`, and `dist/pignose.tab.min.css` in your head element.
 
  ```html
+<link rel="stylesheet" href="dist/pignose.tab.min.css" />
 <script type="text/javascript" src="demo/js/jquery-1.11.0.js"></script>
-<script type="text/javascript" src="dist/js/pignose.tab.min.js"></script>
+<script type="text/javascript" src="dist/pignose.tab.min.js"></script>
  ```
-3. Insert jQuery code lines. <br />
+3. Insert a snippet code as follows.
 
  ```javascript
- $(jQuery Selector).pignoseTab();
+ $({selector}).pignoseTab();
  ```
 
 ### Options
