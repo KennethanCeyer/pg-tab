@@ -1,6 +1,6 @@
 {
   "name": "pg-tab",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "jQuery tab plugin supported accessibility.",
   "main": "index.html",
   "scripts": {
@@ -29,5 +29,13 @@
   "bugs": {
     "url": "https://github.com/KennethanCeyer/PIGNOSE-Tab/issues"
   },
-  "homepage": "https://github.com/KennethanCeyer/PIGNOSE-Tab#readme"
+  "homepage": "https://github.com/KennethanCeyer/PIGNOSE-Tab#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0"
+  }
 }
