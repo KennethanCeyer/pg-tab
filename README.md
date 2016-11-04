@@ -8,14 +8,15 @@ PIGNOSE Tab
 
 * [Check demo page](http://www.pigno.se/barn/PIGNOSE-Tab/)
  
+Web accessibility be supported a responsible tab plugin.
+ 
 ![PIGNOSE Tab Sample](http://www.nhpcw.com/upload/%25EB%258B%25A4%25EC%259A%25B4%25EB%25A1%259C%25EB%2593%259C%2B%25287%2529_032416020737.png)
 
 - This plugin supports the ```web accessibility``` perfectly
 - And also supports animation. <br />
 - You can choose the color of theme very easily.
 
-Getting started
-----
+## Getting started
 
 ### Overview
 
